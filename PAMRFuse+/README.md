@@ -31,11 +31,11 @@ In 'Trainer/train_reg.py', deformable images are generated in real time by defau
     ```python
     ## testing
        cd ./P2M
-       python test.py --dataroot datasets/rgb2ir/RoadScene/testA --name rgb2ir_paired_Road_edge_pretrained --model test --no_dropout --preprocess none
+       python test.py --dataroot datasets/ --name pretrained --model test --no_dropout --preprocess none
     
     ## training
        cd ./P2M
-       python train.py --dataroot ./datasets/rgb2ir/RoadScene --name rgb2ir_paired_Road_edge --model cycle_gan --dataset_mode unaligned
+       python train.py --dataroot ./datasets/ --name paired --model cycle_gan --dataset_mode unaligned
 
 If you tend to train Registration and Fusion processes jointly, You can run following command: 
    ```python
